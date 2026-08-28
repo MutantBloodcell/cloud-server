@@ -24,7 +24,7 @@ if (!USER_AGENT) {
   throw new Error('You are required to provide a valid User-Agent header! See `const USER_AGENT = ...` and the comment above it near the start of this file.');
 }
 
-const ws = new WebSocket("wss://clouddata.turbowarp.org", {
+const ws = new WebSocket("wss://cloud-server-cveh.onrender.com", {
   headers: {
     'user-agent': USER_AGENT
   }
